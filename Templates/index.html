@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/css/index.css" />
+</head>
+<body>
+    <form action="/new" method="POST">
+        <p>Введите имя нового пользователя</p>
+        <input type="text" name="name">
+        <br/>
+        <p>Введите продукты (построчно)</p>
+        <textarea name="products"></textarea>
+        <br/>
+        <button type="submit">ОК</button>
+        <span style="color: red">{{error}}</span>
+    </form>
+</body>
+</html>
